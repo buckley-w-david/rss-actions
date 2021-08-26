@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "rss_actions"
+version = "0.1.0"
+description = ""
+authors = ["David Buckley <david@davidbuckley.ca>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+rss-actions = "rss_actions.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.8.2"
+typer = "^0.3.2"
+toml = "^0.10.2"
+webserial = {git = "https://github.com/buckley-w-david/webserial.git"}
+listparser = "^0.18"
+reader = "^2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.7b0"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

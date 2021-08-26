@@ -14,4 +14,4 @@ build/
 *.egg-info/
 *.sqlite*
 rr2atom.toml
-*.toml
+rss-actions.toml
